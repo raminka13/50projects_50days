@@ -5,6 +5,12 @@ const projects = [
     url: './expanding_cards/index.html',
     description: 'Simple expanding cards with HTML, CSS and JavaScript',
   },
+  {
+    id: 2,
+    name: 'Progress Steps',
+    url: './progress-steps/index.html',
+    description: 'Simple progress steps with HTML, CSS and JavaScript',
+  },
 ];
 
 const container = document.querySelector('.container');

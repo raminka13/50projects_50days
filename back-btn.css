@@ -1,0 +1,12 @@
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #5c5c5c;
+  border: none;
+  border-radius: 1rem;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  color: #fff;
+}
