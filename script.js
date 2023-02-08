@@ -17,6 +17,12 @@ const projects = [
     url: './rotating-nav-animation/index.html',
     description: 'Simple rotating nav animation with HTML, CSS and JavaScript',
   },
+  {
+    id: 4,
+    name: 'Blurry Loading',
+    url: './blurry-loading/index.html',
+    description: '',
+  },
 ];
 
 const container = document.querySelector('.container');
