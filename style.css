@@ -16,6 +16,11 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .container {
   display: flex;
   width: 90vw;
@@ -23,16 +28,31 @@ body {
 
 .card {
   display: flex;
-  justify-content: center;
+  background-color: #939393;
+  justify-content: space-around;
   align-items: center;
   height: 10vh;
   border: solid 1px #000;
-  border-radius: 50px;
-  color: #fff;
+  border-radius: 0.5rem;
   flex: 0.5;
   margin: 10px;
   position: relative;
   transition: all 700ms ease-in;
+}
+
+.card-number {
+  text-align: center;
+  color: #646464;
+  font-size: 4rem;
+  font-weight: 700;
+  flex: 1;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  flex: 4;
 }
 
 @media (max-width: 480px) {
