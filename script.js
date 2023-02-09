@@ -21,7 +21,13 @@ const projects = [
     id: 4,
     name: 'Blurry Loading',
     url: './blurry-loading/index.html',
-    description: '',
+    description: 'Simple loader animation with HTML, CSS and JavaScript',
+  },
+  {
+    id: 5,
+    name: 'Scroll Animation',
+    url: './scroll-animation/index.html',
+    description: 'Simple scroll animation with HTML, CSS and JavaScript',
   },
 ];
 
