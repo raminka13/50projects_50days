@@ -1,7 +1,8 @@
 .back-btn {
   position: absolute;
   top: 20px;
-  left: 50%;
+  left: 45%;
+  right: 45%;
   background: #5c5c5c;
   border: none;
   border-radius: 1rem;
@@ -9,4 +10,8 @@
   cursor: pointer;
   transition: all 0.3s ease-in;
   color: #fff;
+}
+
+.back-btn:hover {
+  background: #000;
 }
