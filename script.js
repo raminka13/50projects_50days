@@ -29,6 +29,12 @@ const projects = [
     url: './scroll-animation/index.html',
     description: 'Simple scroll animation with HTML, CSS and JavaScript',
   },
+  {
+    id: 6,
+    name: 'Split Landing Page',
+    url: './split-landing-page/index.html',
+    description: 'Simple split landing page with HTML, CSS and JavaScript',
+  },
 ];
 
 const container = document.querySelector('.container');
