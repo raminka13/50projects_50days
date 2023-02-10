@@ -17,5 +17,7 @@ function blurring() {
 
 window.addEventListener('load', () => {
   const int = setInterval(blurring, 30);
-  if (load > 99) (clearInterval(int));
+  if (load > 99) {
+    clearInterval(int);
+  }
 });

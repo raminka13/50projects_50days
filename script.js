@@ -35,6 +35,12 @@ const projects = [
     url: './split-landing-page/index.html',
     description: 'Simple split landing page with HTML, CSS and JavaScript',
   },
+  {
+    id: 7,
+    name: 'Form Input Wave',
+    url: './form-input-wave/index.html',
+    description: 'Simple form input wave animation with HTML, CSS and JavaScript',
+  },
 ];
 
 const container = document.querySelector('.container');

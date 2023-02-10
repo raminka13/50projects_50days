@@ -1,17 +1,22 @@
-.back-btn {
+.back-btn,
+.reload {
   position: fixed;
   top: 20px;
-  left: 45%;
-  right: 45%;
+  margin: auto;
   background: #5c5c5c;
   border: none;
-  border-radius: 1rem;
-  padding: 10px;
+  border-radius: 0.85rem;
+  padding: 15px;
   cursor: pointer;
   transition: all 0.3s ease-in;
   color: #fff;
 }
 
-.back-btn:hover {
+.reload {
+  top: 80px;
+}
+
+.back-btn:hover,
+.reload:hover {
   background: #000;
 }
