@@ -41,6 +41,12 @@ const projects = [
     url: './form-input-wave/index.html',
     description: 'Simple form input wave animation with HTML, CSS and JavaScript',
   },
+  {
+    id: 8,
+    name: 'Sound Board',
+    url: './sound-board/index.html',
+    description: 'Simple sound board with HTML, CSS and JavaScript',
+  },
 ];
 
 const container = document.querySelector('.container');
