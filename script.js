@@ -47,6 +47,12 @@ const projects = [
     url: './sound-board/index.html',
     description: 'Simple sound board with HTML, CSS and JavaScript',
   },
+  {
+    id: 9,
+    name: 'Dad Jokes',
+    url: './dad-jokes/index.html',
+    description: 'Simple dad jokes with HTML, CSS and JavaScript',
+  },
 ];
 
 const container = document.querySelector('.container');
