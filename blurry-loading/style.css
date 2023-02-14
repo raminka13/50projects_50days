@@ -17,7 +17,7 @@ body {
 
 .bg {
   background:
-    url("https://source.unsplash.com/random/?Patterns/1920x1080")
+    url("https://source.unsplash.com/random/?colors/1920x1080")
     no-repeat center center/cover;
   position: absolute;
   top: -30px;
