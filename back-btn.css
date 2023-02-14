@@ -2,6 +2,8 @@
 .reload {
   position: fixed;
   top: 20px;
+  left: 45%;
+  right: 45%;
   margin: auto;
   background: #5c5c5c;
   border: none;

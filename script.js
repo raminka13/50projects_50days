@@ -53,6 +53,12 @@ const projects = [
     url: './dad-jokes/index.html',
     description: 'Simple dad jokes with HTML, CSS and JavaScript',
   },
+  {
+    id: 10,
+    name: 'Event Keycodes',
+    url: './event-keycodes/index.html',
+    description: 'Simple event keycodes with HTML, CSS and JavaScript',
+  },
 ];
 
 const container = document.querySelector('.container');
