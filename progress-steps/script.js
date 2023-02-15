@@ -35,6 +35,10 @@ next.addEventListener('click', () => {
     currentActive = circles.length;
   }
 
+  if (currentActive === circles.length) {
+    window.history.back();
+  }
+
   update();
 });
 
