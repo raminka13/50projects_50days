@@ -59,6 +59,12 @@ const projects = [
     url: './event-keycodes/index.html',
     description: 'Simple event keycodes with HTML, CSS and JavaScript',
   },
+  {
+    id: 11,
+    name: 'Magic Hover Effect',
+    url: './magic-hover/index.html',
+    description: 'Simple magic hover effect with HTML, CSS and JavaScript',
+  },
 ];
 
 const container = document.querySelector('.container');
