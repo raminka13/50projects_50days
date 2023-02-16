@@ -12,6 +12,7 @@
   cursor: pointer;
   transition: all 0.3s ease-in;
   color: #fff;
+  z-index: 99;
 }
 
 .reload {

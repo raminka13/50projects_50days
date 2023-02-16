@@ -116,11 +116,7 @@ span {
 .card-img-icon {
   font-size: 6em;
   text-align: center;
-  opacity: 0.25;
-}
-
-.card-img-icon:hover {
-  opacity: 0.75;
+  opacity: 0.55;
 }
 
 .card-info-wrapper {

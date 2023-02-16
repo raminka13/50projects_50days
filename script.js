@@ -76,6 +76,13 @@ const projects = [
     url: './magic-hover/index.html',
     description: 'Simple magic hover effect with HTML, CSS and JavaScript',
   },
+  {
+    id: 12,
+    icon: '📱',
+    name: 'Curtain Nav Menu',
+    url: './curtain-menu/index.html',
+    description: 'Simple curtain nav menu with HTML, CSS and JavaScript',
+  },
 ];
 
 const container = document.getElementById('container');
