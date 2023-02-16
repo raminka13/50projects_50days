@@ -83,6 +83,13 @@ const projects = [
     url: './curtain-menu/index.html',
     description: 'Simple curtain nav menu with HTML, CSS and JavaScript',
   },
+  {
+    id: 13,
+    icon: '🤔',
+    name: 'FAQ Collapse',
+    url: './faq-collapse/index.html',
+    description: 'Simple FAQ collapse with HTML, CSS and JavaScript',
+  },
 ];
 
 const container = document.getElementById('container');
