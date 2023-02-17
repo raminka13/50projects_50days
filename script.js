@@ -97,6 +97,13 @@ const projects = [
     url: './random-choice-picker/index.html',
     description: 'Simple random choice picker with HTML, CSS and JavaScript',
   },
+  {
+    id: 15,
+    icon: '⏰',
+    name: 'Fancy Clock',
+    url: './fancy-clock/index.html',
+    description: 'Simple fancy clock with HTML, CSS and JavaScript',
+  },
 ];
 
 const container = document.getElementById('container');
