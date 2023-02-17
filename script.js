@@ -90,6 +90,13 @@ const projects = [
     url: './faq-collapse/index.html',
     description: 'Simple FAQ collapse with HTML, CSS and JavaScript',
   },
+  {
+    id: 14,
+    icon: '⚡️',
+    name: 'Random Choice Picker',
+    url: './random-choice-picker/index.html',
+    description: 'Simple random choice picker with HTML, CSS and JavaScript',
+  },
 ];
 
 const container = document.getElementById('container');
