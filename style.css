@@ -23,6 +23,8 @@ body {
   margin-bottom: 5rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 8px;
   max-width: 916px;
   width: calc(100% - 20px);
@@ -103,12 +105,13 @@ span {
   color: rgb(240, 240, 240);
   font-weight: 400;
   margin: 0;
+  text-align: center;
 }
 
-.card-image {
+.card-img {
   align-items: center;
   display: flex;
-  height: 140px;
+  height: 60%;
   justify-content: center;
   overflow: hidden;
 }
@@ -127,10 +130,11 @@ span {
   padding: 0 20px;
 }
 
-.card-info {
-  align-items: flex-start;
+.card-info-title {
+  height: 100%;
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-info > i {
@@ -148,40 +152,31 @@ span {
 
 .card-info-title > h4 {
   color: rgba(255, 255, 255, 0.5);
-  font-size: 0.85em;
-  margin-top: 8px;
+  font-size: 0.75em;
+  margin-top: 5px;
 }
 
-/* -- ↓ ↓ ↓ some responsiveness ↓ ↓ ↓ -- */
-
-@media (max-width: 1000px) {
-  body {
-    align-items: flex-start;
-    overflow: auto;
-  }
-
-  #cards {
-    max-width: 1000px;
-    padding: 10px 0;
-  }
-
+@media only screen and (max-width: 900px) {
+  /* For desktop: */
   .card {
-    flex-shrink: 1;
+    width: 25%;
     width: calc(50% - 4px);
   }
 }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 600px) {
+  /* For tablets: */
   .card {
     height: 180px;
+    width: 45%;
   }
 
   .card-image {
-    height: 80px;
+    height: 100px;
   }
 
   .card-img-icon {
-    font-size: 3em;
+    font-size: 4em;
   }
 
   .card-info-wrapper {
@@ -202,8 +197,9 @@ span {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .card {
     width: 100%;
+    max-width: 340px;
   }
 }

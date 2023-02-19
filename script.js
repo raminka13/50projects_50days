@@ -111,8 +111,7 @@ const container = document.getElementById('container');
 projects.forEach((project) => {
   const cardLink = document.createElement('a');
   cardLink.href = project.url;
-  const card = document.createElement('div');
-  card.classList.add('card');
+  cardLink.classList.add('card');
   const cardContent = document.createElement('div');
   cardContent.classList.add('card-content');
   const cardImg = document.createElement('div');
@@ -131,8 +130,7 @@ projects.forEach((project) => {
   const cardInfoDescription = document.createElement('h4');
   cardInfoDescription.textContent = project.description;
   container.appendChild(cardLink);
-  cardLink.appendChild(card);
-  card.appendChild(cardContent);
+  cardLink.appendChild(cardContent);
   cardContent.appendChild(cardImg);
   cardImg.appendChild(cardImgIcon);
   cardContent.appendChild(cardInfoWrapper);
