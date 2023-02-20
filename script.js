@@ -111,6 +111,13 @@ const projects = [
     url: './animated-navigation/index.html',
     description: 'Simple animated navigation with HTML, CSS and JavaScript',
   },
+  {
+    id: 17,
+    icon: '💯',
+    name: 'Incrementing Counter',
+    url: './incrementing-counter/index.html',
+    description: 'Simple incrementing counter with HTML, CSS and JavaScript',
+  },
 ];
 
 const container = document.getElementById('container');
