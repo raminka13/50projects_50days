@@ -104,6 +104,13 @@ const projects = [
     url: './fancy-clock/index.html',
     description: 'Simple fancy clock with HTML, CSS and JavaScript',
   },
+  {
+    id: 16,
+    icon: '🧭',
+    name: 'Animated Navigation',
+    url: './animated-navigation/index.html',
+    description: 'Simple animated navigation with HTML, CSS and JavaScript',
+  },
 ];
 
 const container = document.getElementById('container');
