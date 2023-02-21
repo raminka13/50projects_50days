@@ -118,6 +118,13 @@ const projects = [
     url: './incrementing-counter/index.html',
     description: 'Simple incrementing counter with HTML, CSS and JavaScript',
   },
+  {
+    id: 18,
+    icon: '💧',
+    name: 'Drink Water',
+    url: './drink-water/index.html',
+    description: 'Simple drink water with HTML, CSS and JavaScript',
+  },
 ];
 
 const container = document.getElementById('container');
