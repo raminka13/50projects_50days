@@ -125,6 +125,13 @@ const projects = [
     url: './drink-water/index.html',
     description: 'Simple drink water with HTML, CSS and JavaScript',
   },
+  {
+    id: 19,
+    icon: '🎬',
+    name: 'Movie App',
+    url: './movie-app/index.html',
+    description: 'Simple movie app with HTML, CSS and JavaScript',
+  },
 ];
 
 const container = document.getElementById('container');

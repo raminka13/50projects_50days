@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+:root {
+  --primary-color: #22254b;
+  --secondary-color: #373b69;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  padding: 5rem 3rem 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: var(--secondary-color);
+}
+
+header h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.search {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
+
+.search::placeholder {
+  color: #7378c5;
+}
+
+.search:focus {
+  outline: none;
+  background-color: var(--primary-color);
+}
+
+main {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.movie {
+  width: 300px;
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 5px #0000003e;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.movie img {
+  width: 100%;
+}
+
+.movie-info {
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.2rem;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px;
+}
+
+.movie-info h3 {
+  margin-top: 0;
+}
+
+.movie-info span {
+  background-color: var(--primary-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.movie-info span.green,
+.green {
+  color: #90ee90;
+}
+
+.movie-info span.orange,
+.orange {
+  color: orange;
+}
+
+.movie-info span.red,
+.red {
+  color: red;
+}
+
+.overview {
+  background:
+    linear-gradient(
+      180deg,
+      var(--secondary-color) 0%,
+      #ffffffe4 60%,
+      #fffffff0 100%
+    );
+  padding: 2rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-height: 100%;
+  min-height: 50%;
+  min-width: 100%;
+  transform: translateY(101%);
+  overflow-y: auto;
+  transition: transform 0.5s ease;
+}
+
+.overview p {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.movie:hover .overview {
+  transform: translateY(0);
+}
