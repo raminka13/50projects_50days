@@ -19,8 +19,10 @@
       }]
     },
     "ignorePatterns": [
-      "dist/",
-      "build/"
+      "./dist/",
+      "./build/",
+      "./node_modules/",
+      "./fontawesome/"
     ]
   }
   
