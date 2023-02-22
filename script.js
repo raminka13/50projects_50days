@@ -139,6 +139,13 @@ const projects = [
     url: './gradient-card/index.html',
     description: 'Simple gradient hover card with HTML, CSS and JavaScript',
   },
+  {
+    id: 21,
+    icon: '🌁',
+    name: 'Background Slider',
+    url: './background-slider/index.html',
+    description: 'Simple background slider with HTML, CSS and JavaScript',
+  },
 ];
 
 const container = document.getElementById('container');
