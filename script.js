@@ -132,6 +132,13 @@ const projects = [
     url: './movie-app/index.html',
     description: 'Simple movie app with HTML, CSS and JavaScript',
   },
+  {
+    id: 20,
+    icon: '🎴',
+    name: 'Gradient Hover Card',
+    url: './gradient-card/index.html',
+    description: 'Simple gradient hover card with HTML, CSS and JavaScript',
+  },
 ];
 
 const container = document.getElementById('container');
