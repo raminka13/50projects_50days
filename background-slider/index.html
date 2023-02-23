@@ -4,38 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
-    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="../back-btn.css" />
     <title>Background Slider</title>
   </head>
   <body>
-    <button type="button" class="back-btn" onclick="window.history.back()">Go back</button>
+    <button type="button" class="back-btn" onclick="window.history.back()">
+      Go back
+    </button>
     <div class="slider-container">
-      <div
-        class="slide active"
-      ></div>
-      <div
-        class="slide"
-      ></div>
-
-      <div
-        class="slide"
-      ></div>
-
-      <div
-        class="slide"
-      ></div>
-
-      <div
-        class="slide"
-      ></div>
-
-      <button class="arrow left-arrow" id="left">
+      <div class="slide active">
+        <div class="loading-text">Loading...</div>
+      </div>
+      <div class="slide">
+        <div class="loading-text">Loading...</div>
+      </div>
+      <div class="slide active">
+        <div class="loading-text">Loading...</div>
+      </div>
+      <div class="slide">
+        <div class="loading-text">Loading...</div>
+      </div>
+      <div class="slide">
+        <div class="loading-text">Loading...</div>
+      </div>
+      <button type="button" class="arrow left-arrow" id="left">
         <i class="fas fa-arrow-left"></i>
       </button>
 
-      <button class="arrow right-arrow" id="right">
+      <button type="button" class="arrow right-arrow" id="right">
         <i class="fas fa-arrow-right"></i>
       </button>
     </div>
