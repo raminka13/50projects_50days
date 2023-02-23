@@ -146,6 +146,13 @@ const projects = [
     url: './background-slider/index.html',
     description: 'Simple background slider with HTML, CSS and JavaScript',
   },
+  {
+    id: 22,
+    icon: '🫳🏼',
+    name: 'Drag N Drop',
+    url: './drag-drop/index.html',
+    description: 'Simple drag and drop with HTML, Tailwind and JavaScript',
+  },
 ];
 
 const container = document.getElementById('container');
