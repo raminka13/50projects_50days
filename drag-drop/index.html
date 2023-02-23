@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="stylesheet" href="../back-btn.css" />
     <!-- Load Tailwind CSS -->
     <link
       rel="stylesheet"
@@ -11,8 +13,9 @@
     />
     <title>Drag and Drop Example</title>
   </head>
-  <body class="bg-gray-100">
-    <div class="max-w-md mx-auto mt-8">
+  <body class="bg-gray-100 pt-24">
+    <button type="button" class="back-btn" onclick="window.history.back()">Go back</button>
+    <div class="max-w-md mx-auto mt-9">
       <!-- Drag and drop list -->
       <div class="p-4 bg-white rounded-lg shadow-lg">
         <ul
