@@ -153,6 +153,13 @@ const projects = [
     url: './drag-drop/index.html',
     description: 'Simple drag and drop with HTML, Tailwind and JavaScript',
   },
+  {
+    id: 23,
+    icon: '⌚️',
+    name: 'Theme Clock',
+    url: './theme-clock/index.html',
+    description: 'Simple theme clock with HTML, CSS and JavaScript',
+  },
 ];
 
 const container = document.getElementById('container');
