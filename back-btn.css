@@ -1,25 +1,30 @@
 .back-btn,
 .reload {
   position: fixed;
-  top: 20px;
-  left: 45%;
-  right: 45%;
-  margin: auto;
-  background: #5c5c5c;
+  top: 10px;
+  margin: 20px 46%;
+  background: #5c5c5cd8;
   border: none;
   border-radius: 10px;
-  padding: 15px;
+  padding: 12px 15px;
   cursor: pointer;
-  transition: all 0.3s ease-in;
+  transition: all 200ms ease-in-out;
   color: #fff;
   z-index: 99;
 }
 
 .reload {
-  top: 80px;
+  top: 90%;
 }
 
 .back-btn:hover,
 .reload:hover {
-  background: #000;
+  background: #17011dc3;
+  border: #c800ff9e 1px solid;
+}
+
+.back-btn:active,
+.reload:active {
+  background: #2b02369b;
+  transform: scale(0.9);
 }
