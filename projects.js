@@ -167,6 +167,21 @@ const projects = [
     url: './button-ripple-effect/',
     description: 'Simple button ripple effect with HTML, CSS and JavaScript',
   },
+  {
+    id: 25,
+    icon: '✌🏼',
+    name: 'Drag N Drop 2',
+    url: './drag-n-drop2/',
+    description: 'Simple drag and drop with HTML, CSS and JavaScript',
+  },
+  {
+    id: 26,
+    icon: '📰',
+    name: 'Content Placeholder',
+    url: './content-placeholder/',
+    description: 'Simple content placeholder with HTML, CSS and JavaScript',
+  },
 ];
 
 export default projects;
+export { projects };
