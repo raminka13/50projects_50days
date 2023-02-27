@@ -181,6 +181,13 @@ const projects = [
     url: './content-placeholder/',
     description: 'Simple content placeholder with HTML, CSS and JavaScript',
   },
+  {
+    id: 27,
+    icon: '↕️',
+    name: 'Vertical Slider',
+    url: './double-vertical-slider/',
+    description: 'Simple vertical slider with HTML, CSS and JavaScript',
+  },
 ];
 
 export default projects;
