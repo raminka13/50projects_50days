@@ -188,6 +188,13 @@ const projects = [
     url: './double-vertical-slider/',
     description: 'Simple vertical slider with HTML, CSS and JavaScript',
   },
+  {
+    id: 28,
+    icon: '🗺',
+    name: 'Sticky Navbar',
+    url: './sticky-navigation/',
+    description: 'Simple sticky navbar with HTML, CSS and JavaScript',
+  },
 ];
 
 export default projects;
