@@ -195,6 +195,13 @@ const projects = [
     url: './sticky-navigation/',
     description: 'Simple sticky navbar with HTML, CSS and JavaScript',
   },
+  {
+    id: 29,
+    icon: '❤️',
+    name: 'Double Click Heart',
+    url: './double-click-heart/',
+    description: 'Simple double click heart with HTML, CSS and JavaScript',
+  },
 ];
 
 export default projects;
