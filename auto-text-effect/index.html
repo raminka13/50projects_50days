@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../back-btn.css" />
+    <title>Auto Text Effect</title>
+  </head>
+  <body>
+    <button type="button" class="back-btn" onclick="window.history.back()">
+      Go back
+    </button>
+    
+    <h1 id="text">Starting...</h1>
+
+    <div>
+      <label for="speed">Speed:</label>
+      <input type="number" name="speed" id="speed" value="1" min="1" max="10" step="1">
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

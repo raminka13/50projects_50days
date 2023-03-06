@@ -202,6 +202,13 @@ const projects = [
     url: './double-click-heart/',
     description: 'Simple double click heart with HTML, CSS and JavaScript',
   },
+  {
+    id: 30,
+    icon: '💬',
+    name: 'Auto Text Effect',
+    url: './auto-text-effect/',
+    description: 'Simple auto text effect with HTML, CSS and JavaScript',
+  },
 ];
 
 export default projects;
