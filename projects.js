@@ -216,6 +216,13 @@ const projects = [
     url: './password-generator/',
     description: 'Simple password generator with HTML, CSS and JavaScript',
   },
+  {
+    id: 32,
+    icon: '☠️',
+    name: 'Hacked Text Effect',
+    url: './hacked-text-effect/',
+    description: 'Simple hacked text effect with HTML, CSS and JavaScript',
+  },
 ];
 
 export default projects;

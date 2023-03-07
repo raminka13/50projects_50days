@@ -16,5 +16,5 @@
     ],
     "csstree/validator": true
   },
-  "ignoreFiles": ["build/**", "dist/**", "**/reset*.css", "**/bootstrap*.css", "**/*.js", "**/*.jsx", "curtain-menu/**", "gradient-card/**","fontawesome/**"]
+  "ignoreFiles": ["build/**", "dist/**", "**/reset*.css", "**/bootstrap*.css", "**/*.js", "**/*.jsx", "curtain-menu/**", "gradient-card/**", "hacked-text-effect/**","fontawesome/**"]
 }
