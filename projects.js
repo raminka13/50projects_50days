@@ -209,6 +209,13 @@ const projects = [
     url: './auto-text-effect/',
     description: 'Simple auto text effect with HTML, CSS and JavaScript',
   },
+  {
+    id: 31,
+    icon: '🔑',
+    name: 'Password Generator',
+    url: './password-generator/',
+    description: 'Simple password generator with HTML, CSS and JavaScript',
+  },
 ];
 
 export default projects;
