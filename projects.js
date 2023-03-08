@@ -223,6 +223,13 @@ const projects = [
     url: './hacked-text-effect/',
     description: 'Simple hacked text effect with HTML, CSS and JavaScript',
   },
+  {
+    id: 33,
+    icon: '🗒',
+    name: 'Notes App',
+    url: './notes-app/',
+    description: 'Simple notes app with HTML, CSS and JavaScript',
+  },
 ];
 
 export default projects;

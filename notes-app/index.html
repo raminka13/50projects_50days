@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../back-btn.css" />
+    <title>Notes App</title>
+  </head>
+  <body>
+    <button type="button" class="back-btn" onclick="window.history.back()">
+      Go back
+    </button>
+    <button type="button" class="add" id="add">
+      <i class="fas fa-plus"></i> Add note
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.2.2/marked.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
