@@ -230,6 +230,13 @@ const projects = [
     url: './notes-app/',
     description: 'Simple notes app with HTML, CSS and JavaScript',
   },
+  {
+    id: 34,
+    icon: '3️⃣',
+    name: 'Animated Countdown',
+    url: './animated-countdown/',
+    description: 'Simple animated countdown with HTML, CSS and JavaScript',
+  },
 ];
 
 export default projects;
