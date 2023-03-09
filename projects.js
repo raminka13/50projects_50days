@@ -237,6 +237,13 @@ const projects = [
     url: './animated-countdown/',
     description: 'Simple animated countdown with HTML, CSS and JavaScript',
   },
+  {
+    id: 35,
+    icon: '🛤',
+    name: 'Sliding Image Track',
+    url: './sliding-image-track/',
+    description: 'Simple image sliding track with HTML, CSS and JavaScript',
+  },
 ];
 
 export default projects;
