@@ -244,6 +244,13 @@ const projects = [
     url: './sliding-image-track/',
     description: 'Simple image sliding track with HTML, CSS and JavaScript',
   },
+  {
+    id: 36,
+    icon: '🟪',
+    name: 'Hoverboard',
+    url: './hoverboard/',
+    description: 'Simple hoverboard with HTML, CSS and JavaScript',
+  },
 ];
 
 export default projects;
