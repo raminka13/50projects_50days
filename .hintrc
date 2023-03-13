@@ -2,7 +2,7 @@
   "connector": {
     "name": "local",
     "options": {
-      "pattern": ["**", "!.git/**", "!expanding_cards/**", "!node_modules/**"]
+      "pattern": ["**", "!.git/**", "!expanding_cards/**", "!css-popover/**", "!node_modules/**"]
     }
   },
   "extends": ["development"],

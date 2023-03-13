@@ -251,6 +251,13 @@ const projects = [
     url: './hoverboard/',
     description: 'Simple hoverboard with HTML, CSS and JavaScript',
   },
+  {
+    id: 37,
+    icon: '🤹🏼‍♀️',
+    name: 'CSS Popout Menu',
+    url: './css-popover/',
+    description: 'Simple CSS popout menu with HTML, CSS and JavaScript',
+  },
 ];
 
 export default projects;
