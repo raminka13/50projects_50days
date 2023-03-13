@@ -22,10 +22,7 @@ const colors = {
 
 const mainTypes = Object.keys(colors);
 
-const createPokemonCard = async (poke) => {
-  const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${poke.name}`);
-  const data = await res.json();
-  const pokemon = data;
+const createPokemonCard = async (pokemon) => {
   const pokemonEl = document.createElement('div');
   pokemonEl.classList.add('pokemon');
 
@@ -36,7 +33,7 @@ const createPokemonCard = async (poke) => {
   const type = mainTypes.find((type) => pokeTypes.indexOf(type) > -1);
   const color = colors[type];
 
-  pokemonEl.style.backgroundColor = color;
+  pokemonEl.style.backgroundColor = `${color}ed`;
 
   const pokemonInnerHTML = `
       <div class="img-container">
@@ -54,33 +51,42 @@ const createPokemonCard = async (poke) => {
   pokeContainer.appendChild(pokemonEl);
 };
 
-const fetchPokemons = async (url) => {
-  const res = await fetch(url);
-  const data = await res.json();
-  const pokeArr = data.results;
-
-  for (let i = 0; i < pokeArr.length; i += 1) {
-    createPokemonCard(pokeArr[i]);
-  }
-
-  nextPage.setAttribute('data-url', data.next);
-  if (!data.previous) {
+const setLoadMore = (url) => {
+  nextPage.setAttribute('data-url', url.next);
+  if (!url.previous) {
     prevPage.style.display = 'hidden';
   } else {
     prevPage.style.display = 'block';
-    prevPage.setAttribute('data-url', data.previous);
+    prevPage.setAttribute('data-url', url.previous);
   }
+};
+
+const getAllPokemons = async (url) => {
+  const res = await fetch(url);
+  const data = await res.json();
+
+  setLoadMore(data);
+
+  function createPokemonObject(results) {
+    results.forEach(async (pokemon) => {
+      const res = await fetch(pokemon.url);
+      const data = await res.json();
+      createPokemonCard(data);
+    });
+  }
+  createPokemonObject(data.results);
 };
 
 nextPage.addEventListener('click', (e) => {
   const url = e.target.getAttribute('data-url');
   pokeContainer.innerHTML = '';
-  fetchPokemons(url);
+  getAllPokemons(url);
 });
 
 prevPage.addEventListener('click', (e) => {
   const url = e.target.getAttribute('data-url');
   pokeContainer.innerHTML = '';
-  fetchPokemons(url);
+  getAllPokemons(url);
 });
-fetchPokemons(defaultPokeUrl);
+
+getAllPokemons(defaultPokeUrl);
