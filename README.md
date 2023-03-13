@@ -59,27 +59,27 @@ Each project in this repository is self-contained and can be used as a standalon
 16. [Animated Navigation](./animated-navigation/)
 17. [Incrementing Counter](./incrementing-counter/)
 18. [Drink Water](./drink-water/)
-<!-- 17. Movie App
-18. Background Slider
-19. Theme Clock
-20. Button Ripple Effect
-21. Drag N Drop
-22. Drawing App
-23. Kinetic Loader
-24. Content Placeholder
-25. Sticky Navigation
-26. Double Vertical Slider
-27. Toast Notification
-28. GitHub Profiles
-29. Double Click Heart
-30. Auto Text Effect
-31. Password Generator
-32. Good Cheap Fast
-33. Notes App
-34. Animated Countdown
-35. Image Carousel
-36. Hoverboard
-37. Pokedex
+19. [Movie App](./movie-app/)
+20. [Gradient Hover Card](./gradient-card/)
+21. [Background Slider](./background-slider/)
+22. [Drag & Drop](./drag-drop/)
+23. [Theme Clock](./theme-clock/)
+24. [Button Ripple Effect](./button-ripple-effect/)
+25. [Drag & Drop 2](./drag-n-drop2/)
+26. [Content Placeholder](./content-placeholder/)
+27. [Vertical Slider](./double-vertical-slider/)
+28. [Sticky Navbar](./sticky-navigation/)
+29. [Double Click Heart](./double-click-heart/)
+30. [Auto Text Effect](./auto-text-effect/)
+31. [Password Generator](./password-generator/)
+32. [Hacked Text Effect](./hacked-text-effect/)
+33. [Notes App](./notes-app/)
+34. [Animated Countdown](./animated-countdown/)
+35. [Sliding Image Track](./sliding-image-track/)
+36. [Hoverboard](./hoverboard/)
+37. [CSS Popout Menu](./css-popover/)
+38. [Pokedex](./pokedex/)
+<!-- 
 38. Mobile Tab Navigation
 39. Password Strength Background
 40. 3D Background Boxes
