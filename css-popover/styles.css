@@ -1,7 +1,7 @@
 body {
   color: #5a5a5a;
   background: #f7f7f7;
-  font-family: "Euclid Circular A", "Poppins";
+  font-family: "Euclid Circular A", "Poppins", sans-serif;
 }
 
 * {
@@ -20,7 +20,7 @@ nav {
   width: 70%;
   height: 72px;
   padding: 0 20px;
-  background: #ffffff;
+  background: #fff;
   box-shadow: 0 0 20px rgb(0 0 0 / 6%);
 }
 
@@ -118,7 +118,7 @@ button {
   width: 270px;
   max-height: 286px;
   padding: 10px;
-  background: #ffffff;
+  background: #fff;
   border-radius: 8px;
   border: 1px solid #ebebeb;
   box-shadow: 0 0 10px rgb(0 0 0 / 8%);
