@@ -258,6 +258,13 @@ const projects = [
     url: './css-popover/',
     description: 'Simple CSS popout menu with HTML, CSS and JavaScript',
   },
+  {
+    id: 38,
+    icon: '🦖',
+    name: 'Pokedex',
+    url: './pokedex/',
+    description: 'Simple pokedex with HTML, CSS and JavaScript',
+  },
 ];
 
 export default projects;
