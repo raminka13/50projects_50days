@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../back-btn.css" />
+    <title>Pokedex</title>
+  </head>
+  <body>
+    <button type="button" class="back-btn" onclick="window.history.back()">
+      Go back
+    </button>
+    <h1>Pokedex</h1>
+    <div class="poke-container" id="poke-container"></div>
+    <div id="pagination">
+      <button type="button" id="prev-page">Prev</button>
+      <button type="button" id="next-page">Next</button>
+    </div>
+
+    <!-- Design inspired by this Dribbble shot: https://dribbble.com/shots/5611109--Pokemon -->
+    <script src="./script.js"></script>
+  </body>
+</html>
