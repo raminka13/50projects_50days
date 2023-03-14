@@ -85,7 +85,7 @@ h1 {
 }
 
 .pokemon .img-container {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.505);
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -93,12 +93,18 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease;
+}
+
+.pokemon:hover .img-container {
+  box-shadow: 0 0 9px rgba(139, 139, 139, 0.4);
+  transform: scale(1.075);
 }
 
 .pokemon .img-container img {
   max-width: 90%;
-  max-height: 80%;
-  margin-top: 10px;
+  max-height: 84%;
+  margin-top: 15px;
 }
 
 .pokemon .info {

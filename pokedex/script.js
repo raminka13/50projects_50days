@@ -33,21 +33,32 @@ const createPokemonCard = async (pokemon) => {
   const type = mainTypes.find((type) => pokeTypes.indexOf(type) > -1);
   const color = colors[type];
 
-  pokemonEl.style.backgroundColor = `${color}ed`;
+  pokemonEl.style.background = `linear-gradient(to top, #ffffffdd, ${color}ed 30%)`;
 
-  const pokemonInnerHTML = `
-      <div class="img-container">
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon.id}.svg" alt="${name}">
-      </div>
-      <div class="info">
-          <span class="number">#${id}</span>
-          <h3 class="name">${name}</h3>
-          <small class="type"><span>${type}</span> </small>
-      </div>
-      `;
-
-  pokemonEl.innerHTML = pokemonInnerHTML;
-
+  const imgContainer = document.createElement('div');
+  imgContainer.classList.add('img-container');
+  pokemonEl.appendChild(imgContainer);
+  const img = document.createElement('img');
+  img.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon.id}.svg`;
+  img.alt = name;
+  imgContainer.appendChild(img);
+  const info = document.createElement('div');
+  info.classList.add('info');
+  pokemonEl.appendChild(info);
+  const number = document.createElement('span');
+  number.classList.add('number');
+  number.innerText = `#${id}`;
+  info.appendChild(number);
+  const nameEl = document.createElement('h3');
+  nameEl.classList.add('name');
+  nameEl.innerText = name;
+  info.appendChild(nameEl);
+  const small = document.createElement('small');
+  small.classList.add('type');
+  info.appendChild(small);
+  const span = document.createElement('span');
+  span.innerText = type;
+  small.appendChild(span);
   pokeContainer.appendChild(pokemonEl);
 };
 
