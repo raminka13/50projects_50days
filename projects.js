@@ -265,6 +265,13 @@ const projects = [
     url: './pokedex/',
     description: 'Simple pokedex with HTML, CSS and JavaScript',
   },
+  {
+    id: 39,
+    icon: '＃',
+    name: 'Staggered Grid',
+    url: './staggered-grid-effect/',
+    description: 'Simple staggered grid with HTML, CSS, AnimeJS and JavaScript',
+  },
 ];
 
 export default projects;
