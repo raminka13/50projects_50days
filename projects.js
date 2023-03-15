@@ -272,6 +272,13 @@ const projects = [
     url: './staggered-grid-effect/',
     description: 'Simple staggered grid with HTML, CSS, AnimeJS and JavaScript',
   },
+  {
+    id: 40,
+    icon: '📆',
+    name: 'Locale Calendar',
+    url: './locale-calendar/',
+    description: 'Simple locale calendar with HTML, CSS and JavaScript',
+  },
 ];
 
 export default projects;
