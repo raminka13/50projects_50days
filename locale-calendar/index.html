@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../back-btn.css" />
+    <title>Locale Calendar</title>
+  </head>
+  <body>
+    <button type="button" class="back-btn" onclick="window.history.back()">
+        Back
+    </button>
+    <label
+      >Select locale:
+      <select id="lang">
+        <option value="de-DE">de-DE</option>
+        <option value="es-ES">Español-ES</option>
+        <option value="en-US" selected>English-US</option>
+        <option value="fa-IR">fa-IR</option>
+        <option value="fr-FR">French-FR</option>
+        <option value="he-IL">he-IL</option>
+        <option value="ja-JP">ja-JP</option>
+      </select>
+    </label>
+    <jor-el id="app" data-year="true"></jor-el>
+    <script src="./script.js"></script>
+  </body>
+</html>
