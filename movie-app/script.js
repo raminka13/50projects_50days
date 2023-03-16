@@ -1,7 +1,8 @@
 /* eslint-disable camelcase */
-const API_URL = 'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=3fd2be6f0c70a2a598f084ddfb75487c&page=1';
+const API_KEY = '3fd2be6f0c70a2a598f084ddfb75487c';
+const API_URL = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=${API_KEY}&page=1`;
 const IMG_PATH = 'https://image.tmdb.org/t/p/w1280';
-const SEARCH_API = 'https://api.themoviedb.org/3/search/movie?api_key=3fd2be6f0c70a2a598f084ddfb75487c&query="';
+const SEARCH_API = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query="`;
 
 const main = document.getElementById('main');
 const form = document.getElementById('form');
@@ -30,6 +31,7 @@ function showMovies(movies) {
     movieImg.src = IMG_PATH + poster_path;
     movieImg.alt = title;
     movieImg.classList.add('movie-img');
+    movieImg.classList.add('loading');
     movieEl.appendChild(movieImg);
     const movieInfo = document.createElement('div');
     movieInfo.classList.add('movie-info');
@@ -79,5 +81,17 @@ form.addEventListener('submit', (e) => {
   }
 });
 
+window.addEventListener('load', () => {
+  const loadings = document.querySelectorAll('.loading');
+  loadings.forEach((loading) => {
+    loading.classList.remove('loading');
+  });
+});
 // Get initial movies
 getMovies(API_URL);
+
+const logo = document.getElementById('logo');
+
+logo.addEventListener('click', () => {
+  window.location.reload();
+});
