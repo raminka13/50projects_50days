@@ -1,7 +1,7 @@
 const projects = [
   {
     id: 1,
-    icon: '🗂',
+    icon: '⛰',
     name: 'Expanding Cards',
     url: './expanding_cards/',
     description: 'Simple expanding cards with HTML, CSS and JavaScript',
