@@ -8,6 +8,10 @@ projects.forEach((project) => {
   cardLink.classList.add('card');
   const cardContent = document.createElement('div');
   cardContent.classList.add('card-content');
+  const cardId = document.createElement('h6');
+  cardId.classList.add('card-id');
+  cardId.textContent = project.id;
+  cardContent.appendChild(cardId);
   const cardImg = document.createElement('div');
   cardImg.classList.add('card-img');
   const cardImgIcon = document.createElement('h2');
