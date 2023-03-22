@@ -7,10 +7,16 @@
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #abcce6;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
   font-family: "Oswald", sans-serif;
   text-align: center;
   overflow: hidden;
-  margin: 0;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='600' preserveAspectRatio='none' viewBox='0 0 1440 600'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1005%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c187 C 57.6%2c162.6 172.8%2c60.2 288%2c65 C 403.2%2c69.8 460.8%2c203.2 576%2c211 C 691.2%2c218.8 748.8%2c105.4 864%2c104 C 979.2%2c102.6 1036.8%2c215 1152%2c204 C 1267.2%2c193 1382.4%2c80 1440%2c49L1440 600L0 600z' fill='%23184a7e'%3e%3c/path%3e%3cpath d='M 0%2c408 C 96%2c444.6 288%2c602.2 480%2c591 C 672%2c579.8 768%2c362.6 960%2c352 C 1152%2c341.4 1344%2c500.8 1440%2c538L1440 600L0 600z' fill='%232264ab'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1005'%3e%3crect width='1440' height='600' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
 }
 
 h3 {
