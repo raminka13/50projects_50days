@@ -5,6 +5,14 @@ const circles = document.querySelectorAll('.circle');
 
 let currentActive = 1;
 
+function randomColor(cActive) {
+  const h = 0;
+  const s = 1;
+  const l = cActive * 80;
+
+  return `hsl(${h}deg, ${s}%, ${l}%)`;
+}
+
 function update() {
   circles.forEach((circle, idx) => {
     if (idx < currentActive) {
@@ -26,6 +34,7 @@ function update() {
     prev.disabled = false;
     next.disabled = false;
   }
+  document.body.style.backgroundColor = randomColor(currentActive / circles.length);
 }
 
 next.addEventListener('click', () => {
@@ -36,7 +45,7 @@ next.addEventListener('click', () => {
   }
 
   if (currentActive === circles.length) {
-    window.history.back();
+    next.disabled = true;
   }
 
   update();
