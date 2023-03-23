@@ -79,20 +79,8 @@ Each project in this repository is self-contained and can be used as a standalon
 36. [Hoverboard](./hoverboard/)
 37. [CSS Popout Menu](./css-popover/)
 38. [Pokedex](./pokedex/)
-<!-- 
-38. Mobile Tab Navigation
-39. Password Strength Background
-40. 3D Background Boxes
-41. Verify Account UI
-42. Live User Filter
-43. Feedback UI Design
-44. Custom Range Slider
-45. Netflix Navigation
-46. Quiz App
-47. Testimonial Box Switcher
-48. Random Image Feed
-49. Todo List
-50. Insect Catch Game -->
+39. [Staggered Grid](./staggered-grid-effect/)
+40. [Locale Calendar](./locale-calendar/)
 
 ## Contributing
 
