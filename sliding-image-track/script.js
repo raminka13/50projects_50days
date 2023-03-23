@@ -1,7 +1,8 @@
 const track = document.getElementById('image-track');
 
-// eslint-disable-next-line no-return-assign
-const handleOnDown = (e) => track.dataset.mouseDownAt = e.clientX;
+function handleOnDown(e) {
+  track.dataset.mouseDownAt = e.clientX;
+}
 
 const handleOnUp = () => {
   track.dataset.mouseDownAt = '0';
@@ -24,11 +25,12 @@ const handleOnMove = (e) => {
     transform: `translate(${nextPercentage}%, -50%)`,
   }, { duration: 1200, fill: 'forwards' });
 
-  track.getElementsByClassName('image').forEach((image) => {
+  // eslint-disable-next-line no-restricted-syntax
+  for (const image of track.getElementsByClassName('image')) {
     image.animate({
       objectPosition: `${100 + nextPercentage}% center`,
     }, { duration: 1200, fill: 'forwards' });
-  });
+  }
 };
 
 /* -- Had to add extra lines for touch events -- */
