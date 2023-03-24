@@ -30,7 +30,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 9px;
+  gap: 6px;
   max-width: 1200px;
   width: 100%;
   height: 100%;
@@ -57,7 +57,7 @@ body {
   opacity: 0;
   position: absolute;
   top: 0;
-  transition: opacity 360ms;
+  transition: opacity 18ms ease-out;
   width: 100%;
 }
 
@@ -65,8 +65,8 @@ body {
   background:
     radial-gradient(
       720px circle at var(--mouse-x) var(--mouse-y),
-      rgba(255, 255, 255, 0.63) 2%,
-      transparent 40%
+      rgba(255, 255, 255, 0.72) 2%,
+      transparent 50%
     );
   z-index: 3;
   mix-blend-mode: soft-light;
