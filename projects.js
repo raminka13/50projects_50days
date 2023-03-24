@@ -279,6 +279,13 @@ const projects = [
     url: './locale-calendar/',
     description: 'Simple locale calendar with HTML, CSS and JavaScript',
   },
+  {
+    id: 41,
+    icon: '🪩',
+    name: 'Parallax Menu',
+    url: './parallax-menu-effect/',
+    description: 'Simple parallax menu with HTML, CSS and JavaScript',
+  },
 ];
 
 export default projects;
