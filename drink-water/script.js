@@ -2,19 +2,30 @@ const liters = document.getElementById('liters');
 const percentage = document.getElementById('percentage');
 const remained = document.getElementById('remained');
 const cupsContainer = document.querySelector('.cups');
+const goal = document.getElementById('goal');
+let waterPerDay = localStorage.getItem('goal') || 2000;
+let smallCups = [];
 
-const waterPerDay = 2000;
 const cupsPerDay = 8;
 
-for (let i = 0; i < cupsPerDay; i += 1) {
-  const cupDiv = document.createElement('div');
-  cupDiv.classList.add('cup');
-  cupDiv.classList.add('cup-small');
-  cupDiv.innerText = `${Math.floor(waterPerDay / cupsPerDay)} ml`;
-  cupsContainer.appendChild(cupDiv);
+function updateSmallCups() {
+  cupsContainer.innerHTML = '';
+  for (let i = 0; i < cupsPerDay; i += 1) {
+    const cupDiv = document.createElement('div');
+    cupDiv.classList.add('cup');
+    cupDiv.classList.add('cup-small');
+    cupDiv.innerText = `${Math.floor(waterPerDay / cupsPerDay)} ml`;
+    cupsContainer.appendChild(cupDiv);
+  }
+  smallCups = document.querySelectorAll('.cup-small');
+
+  smallCups.forEach((cup, idx) => {
+    // eslint-disable-next-line no-use-before-define
+    cup.addEventListener('click', () => highlightCups(idx));
+  });
 }
 
-const smallCups = document.querySelectorAll('.cup-small');
+updateSmallCups();
 
 function updateBigCup() {
   const fullCups = document.querySelectorAll('.cup-small.full').length;
@@ -34,14 +45,14 @@ function updateBigCup() {
     remained.style.height = 0;
   } else {
     remained.style.visibility = 'visible';
-    liters.innerText = `${(2 - (((waterPerDay / cupsPerDay) * fullCups) / 1000)).toFixed(1)}L`;
+    liters.innerText = `${((waterPerDay / 1000) - (((waterPerDay / cupsPerDay) * fullCups) / 1000)).toFixed(2)}L`;
   }
 }
 
 updateBigCup();
 
 function highlightCups(idx) {
-  if (idx === 7 && smallCups[idx].classList.contains('full')) idx -= 1;
+  if (idx === cupsPerDay - 1 && smallCups[idx].classList.contains('full')) idx -= 1;
   else if (smallCups[idx].classList.contains('full') && !smallCups[idx].nextElementSibling.classList.contains('full')) {
     idx -= 1;
   }
@@ -57,6 +68,9 @@ function highlightCups(idx) {
   updateBigCup();
 }
 
-smallCups.forEach((cup, idx) => {
-  cup.addEventListener('click', () => highlightCups(idx));
+goal.addEventListener('input', (e) => {
+  localStorage.setItem('goal', e.target.value * 1000);
+  waterPerDay = e.target.value * 1000;
+  updateBigCup();
+  updateSmallCups();
 });
