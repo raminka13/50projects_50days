@@ -5,6 +5,7 @@ const cupsContainer = document.querySelector('.cups');
 const goal = document.getElementById('goal');
 let waterPerDay = localStorage.getItem('goal') || 2000;
 let smallCups = [];
+goal.value = waterPerDay / 1000;
 
 const cupsPerDay = 8;
 
