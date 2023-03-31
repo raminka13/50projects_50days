@@ -1,9 +1,10 @@
 const textEl = document.getElementById('text');
 const speedEl = document.getElementById('speed');
-const IPSUM_API = 'https://baconipsum.com/api/?type=meat-and-filler&sentences=1&format=text';
+const IPSUM_API = 'https://baconipsum.com/api/?type=meat-and-filler&sentences=2&format=text';
 
 let text = '.......';
 let idx = 1;
+
 let speed = 300 / speedEl.value;
 
 function writeText() {
