@@ -7,7 +7,8 @@
 }
 
 body {
-  background-color: #3b3b98;
+  background: rgb(24,1,108);
+  background: linear-gradient(90deg, rgba(24,1,108,1) 0%, rgba(9,9,121,1) 31%, rgba(152,0,255,1) 100%); 
   color: #fff;
   font-family: 'Muli', sans-serif;
   display: flex;
@@ -26,8 +27,7 @@ h2 {
 }
 
 .container {
-  background-color: #23235b;
-  box-shadow: 0 0 20px #626292d6;
+  background-color: #3e2598e3;
   padding: 20px;
   width: 350px;
   max-width: 100%;
