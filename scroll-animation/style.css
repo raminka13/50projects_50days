@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -22,32 +24,42 @@ h1 {
   justify-content: center;
   flex-direction: column;
   margin-top: 90px;
+  gap: 20px;
   overflow-x: hidden;
 }
 
 .box {
-  background-color: steelblue;
-  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 400px;
-  height: 200px;
-  margin: 10px;
-  border-radius: 10px;
-  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
-  transform: translateX(400%);
-  transition: transform 0.4s ease;
+  min-width: 36%;
+  aspect-ratio: 16/9;
+  border-radius: 2rem;
+  box-shadow: none;
+  transform: translateX(600px);
+  opacity: 0;
+  transition: all 1s ease;
 }
 
 .box:nth-of-type(even) {
-  transform: translateX(-400%);
+  transform: translateX(-600px);
 }
 
 .box.show {
   transform: translateX(0);
+  opacity: 1;
+  box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
 }
 
 .box h2 {
-  font-size: 45px;
+  text-transform: lowercase;
+  font-size: 36px;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 400px) {
+  .box {
+    min-width: 80%;
+  }
 }

@@ -7,8 +7,7 @@
 }
 
 body {
-  background: rgb(24,1,108);
-  background: linear-gradient(90deg, rgba(24,1,108,1) 0%, rgba(9,9,121,1) 31%, rgba(152,0,255,1) 100%); 
+  background: linear-gradient(45deg, rgba(24, 1, 108, 1) 0%, rgba(9, 9, 121, 1) 20%, rgba(152, 0, 255, 1) 100%);
   color: #fff;
   font-family: 'Muli', sans-serif;
   display: flex;
